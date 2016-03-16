@@ -6,7 +6,6 @@ body{
 	padding: 20px;
 	background-color: #eee;
 	border: #999;
-	height: 537px;
 	border: 1px solid #000;
 }
 
@@ -42,7 +41,6 @@ body{
 }
 
 
-
 .right-side figcaption {
 	display: none;
 }
@@ -53,6 +51,10 @@ body{
 	border: 1px solid #000;
 	width: auto;
 	margin: 0 140px 0 220px;
+}
+
+.clearfix{
+	clear: both;
 }
 
 /*表格布局display:table-cell*/
