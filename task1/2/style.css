@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+	font-family: 'Microsoft Yahei', 'Open Sans', Arial, sans-serif;
+}
+
+h1,h2,h3 {
+	margin: 0;
+}
+
+#banner {
+	background: #444;
+	height: 50px;
+}
+
+#banner h1{
+	color: #fff;
+	float:left;
+	padding-left: 20px;
+}
+
+#banner nav ul{
+	display: inline-block;
+	line-height: 50px;
+	float: right;
+	margin: 0;
+}
+
+#banner nav ul li{
+	display: inline-block;
+	line-height: inherit;
+	padding-left: 5px;
+}
+
+#banner nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#container {
+	background: #ccc;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+article {
+	background: #fff;
+	margin: 20px;
+	padding: 20px 25px;
+	box-shadow: 2px 1px 1px #515151;
+	line-height: 1.5;
+}
+
+article header h2{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+article header h3{
+	color: #515151; 
+}
+
+article header p {
+	display: inline-block;
+	color: #aaa;
+	padding-right: 10px;
+}
+
+article section ul{
+	list-style: none;
+}
+
+.pic figure {
+	width: 170px;
+	height: 180px;
+	border: 1px solid;
+	text-align: center;
+/*	display: inline-block;*/
+	padding: 10px;
+	margin-right: 30px;
+}
+
+.pic figure figcaption {
+	padding-bottom: 5px;
+}
+
+.pic figure img{
+	width: 150px;
+	height: 150px;
+}
+
+aside {
+	background: #fff;
+	margin: 20px;
+	padding: 20px 25px;
+	box-shadow: 2px 1px 1px #515151;
+}
+
+aside h2{
+	border-left: 4px solid #888;
+	padding-left: 2px;
+}
+
+table {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	border-spacing: 0;
+}
+table thead {
+	color: #fff;
+	border: #fff;
+	background: #111;
+}
+tr{
+	padding: 0;
+	
+}
+td {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ddd;
+}
+table tfoot {
+	background: #ddd;
+	font-weight: 350;
+}
+/*table tfoot tr:nth-child(2){
+	width: 720px;
+}*/
+table thead th,table tbody td{
+	width: 480px;
+}
+table thead th:nth-child(3),table tbody td:nth-child(3){
+	width: 240px;
+}
+
+aside label {
+	display: inline-block;
+	width: 30%;
+	text-align:right; 
+	padding: 10px;
+}
+
+aside span {
+	display: inline-block;
+	width: 70%;
+	text-align:left; 
+	padding-left: 32%;
+	color: #ccc;
+}
+
+aside textarea {
+	vertical-align: text-top;
+	width: 50%;
+	height:50px;
+}
+
+aside #input-submit{
+	width: 100%;
+	height: 30px;
+	background-color: #0985B5;
+	margin-top: 10px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: 350;
+} 
+
+footer {
+	height: 40px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+footer p {
+	padding-top: 10px;
+	margin: 0;
+}

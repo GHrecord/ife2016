@@ -1,0 +1,76 @@
+body{
+	padding: 20px;
+}
+
+.container {
+	padding: 20px;
+	background-color: #eee;
+	border: #999;
+	height: 537px;
+	border: 1px solid #000;
+}
+
+.left-side {
+	background-color: #fff;
+	padding: 20px;
+	width: 160px;
+	border: 1px solid #000;
+	float: left;
+}
+
+.left-side img, .left-side p{
+	display: inline-block;
+}
+.left-side p{
+	vertical-align: top;
+	margin-left: 20px;
+}
+.right-side {
+	padding: 20px;
+	padding-top: 0;
+	float: right;
+	width: 80px;
+	border: 1px solid #000;
+	text-align: center;
+	background-color: #fff;
+}
+
+.right-side figure {
+	margin: 0px;
+	margin-top: 20px;
+	clear:both;
+}
+
+
+
+.right-side figcaption {
+	display: none;
+}
+
+.main{
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #000;
+	width: auto;
+	margin: 0 140px 0 220px;
+}
+
+/*表格布局display:table-cell*/
+/* .left-side {
+	display: table-cell;
+	float: left;
+	width: 200px;
+	border: 1px solid #000;
+}
+
+.right-side {
+	display: table-cell;
+	width: 120px;
+	border: 1px solid #000;
+}
+
+.main {
+	display: table-cell;
+	border: 1px solid #000;
+	margin: 0 220px 0 190px;
+}*/
