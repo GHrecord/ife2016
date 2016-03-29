@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定位和居中问题</title>
+	<style type="text/css">
+		.wrap {
+			background-color: #aaa;
+			height: 200px;
+			width: 400px;
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			margin-top: -100px;
+			margin-left: -200px;
+		}
+		.wrap::before {
+			display: block;
+			content:"";
+			background: #fc0;
+			width: 50px;
+			height: 50px;
+			border-radius: 0 0 100% 0;
+		}
+		.wrap::after {
+			display: block;
+			content:"";
+			background: #fc0;
+			width: 50px;
+			height: 50px;
+			border-radius:100% 0 0 0 ;
+			position: relative;
+			left: 350px;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap"></div>
+</body>
+</html>
