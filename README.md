@@ -39,3 +39,27 @@
 
 
 
+#### 4.[demo](http://ghrecord.github.io/ife2016/task1/4/task_4.html)
+
+
+
+笔记：
+
+
+
+#### 5.[demo](http://ghrecord.github.io/ife2016/task1/5/task_5.html)
+
+
+
+笔记：
+
+
+
+#### 6.[demo](http://ghrecord.github.io/ife2016/task1/6/task_6.html)
+
+
+
+笔记：
+
+
+
