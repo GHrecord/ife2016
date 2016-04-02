@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flexbox布局练习</title>
+	<style type="text/css">
+	.container {
+		display: flex;
+		border: 2px solid #000;
+		align-items: center;
+		width: auto;
+		justify-content: space-around;
+	}
+	.box1 , .box2 , .box3{
+		border: 2px solid #f00;
+		margin: 10px;
+		width: 150px;
+	}
+	.box1{height: 120px;}
+	.box2{height: 100px;}
+	.box3{height: 40px;}
+	.box4{
+		border: 2px solid #00f;
+		margin: 10px;
+		width: 150px;
+		height: 200px;
+	}
+	
+	@media all and (max-width: 640px) {
+	.container{
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.box4{order: 1}
+	.box1{order: 2}
+	.box2{order: 3}
+	.box3{order: 4}
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</div>
+</body>
+</html>
