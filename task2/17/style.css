@@ -1,4 +1,6 @@
-
+body {
+	font-family: "Microsoft Yahei";
+}
 
 fieldset{
 	width: 180px;
@@ -43,7 +45,7 @@ fieldset{
 .details {
 	font-size: 15px;
 	color: #767676;
-	width: 130px;
+	width: 140px;
 	height: 36px;
 	position: absolute;
 	top: -50px;
