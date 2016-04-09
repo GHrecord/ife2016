@@ -1,0 +1,56 @@
+
+
+fieldset{
+	width: 180px;
+	display: inline-block;
+}
+.aqi-chart-wrap{
+	/*width: auto;*/
+	height: 500px;
+	margin: 0 80px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.col-d {
+	width: 10px;
+	margin: 0;
+	flex-flow: row nowrap;
+	cursor: pointer;
+	background: #fa1103;
+	position: relative;
+}
+.col-w {
+	display: inline-block;
+	width: 40px;
+	margin: 0;
+	background: #fa1103;
+	flex-flow: row nowrap;
+	cursor: pointer;
+	position: relative;
+}
+.col-m {
+	display: inline-block;
+	width: 60px;
+	margin: 0;
+	background: #fa1103;
+	flex-flow: row nowrap;
+	cursor: pointer;
+	position: relative;
+}
+.details {
+	font-size: 15px;
+	color: #767676;
+	width: 130px;
+	height: 36px;
+	position: absolute;
+	top: -50px;
+	border: 1px solid #767676;
+	border-radius: 5px;
+	padding: 3px;
+	z-index: 100;
+	background: #fff;
+	visibility: hidden;
+}
