@@ -99,7 +99,7 @@ function setData(){
         //console.log(i);
         if (tempDate != numOfMonth) {
           numOfMonth++;
-          chartData["2016-Month"+numOfMonth] = sum/i;
+          chartData["2016-Mon"+numOfMonth] = sum/i;
           //console.log(numOfMonth,sum);
           i=0;sum=0;
         }
