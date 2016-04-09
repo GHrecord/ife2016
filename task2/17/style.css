@@ -1,5 +1,7 @@
 body {
 	font-family: "Microsoft Yahei";
+	height: 100%;
+	margin: 0;
 }
 
 fieldset{
@@ -14,6 +16,7 @@ fieldset{
 	align-items: flex-end;
 	justify-content: space-around;
 	margin-top: 50px;
+	overflow: hidden;
 }
 
 .col-d {
@@ -49,10 +52,23 @@ fieldset{
 	height: 36px;
 	position: absolute;
 	top: -50px;
+	left: -60px;
 	border: 1px solid #767676;
 	border-radius: 5px;
 	padding: 3px;
 	z-index: 100;
 	background: #fff;
 	visibility: hidden;
+}
+.bar {
+	animation: moveIn 1s;
+}
+
+@keyframes moveIn {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
