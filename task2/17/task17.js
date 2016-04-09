@@ -106,7 +106,7 @@ function setData(){
       }
       if(i!=0) {
           numOfMonth++;
-          chartData["2016-Month"+numOfMonth]= sum/i;
+          chartData["2016-Mon"+numOfMonth]= sum/i;
       }
       break;
     case "week":dateClass="col-w";
