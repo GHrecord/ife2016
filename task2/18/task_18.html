@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>基础JavaScript练习（一）</title>
+	<style type="text/css">
+		input {
+			box-sizing: border-box;
+		}
+		.element {
+			display: inline-block;
+			background: #f00;
+			line-height: 30px;
+			height: 30px;
+			padding: 15px;
+			color: #fff;
+			font-size: 20px;
+			text-align:center;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="text" class="textInput" />
+		<input type="button" name="leftIn" value="左侧入" />
+		<input type="button" name="rightIn" value="右侧入" />
+		<input type="button" name="leftOut" value="左侧出" />
+		<input type="button" name="rightOut" value="右侧出" />
+	</div>
+	<div class="elementWrap"></div>
+
+	<script type="text/javascript">
+		var textInput = document.getElementsByClassName("textInput")[0];
+		var elementWrap = document.getElementsByClassName("elementWrap")[0];
+		console.log(elementWrap);
+		document.getElementsByName("leftIn")[0].onclick = function(){
+			if (textInput.value&&textInput.value.match(/^\d+$/)) {
+				elementWrap.insertAdjacentHTML("afterbegin","<span class='element'>"+textInput.value+"</span>");
+				textInput.value="";
+			}else{alert("请输入要插入的数");}
+			
+		}
+		document.getElementsByName("rightIn")[0].onclick = function(){
+			if (textInput.value&&textInput.value.match(/^\d+$/)) {
+				elementWrap.insertAdjacentHTML("beforeend","<span class='element'>"+textInput.value+"</span>");
+				textInput.value="";
+			}else{alert("请输入要插入的数");}
+			
+		}
+		document.getElementsByName("rightOut")[0].onclick = function(){
+			//console.log(elementWrap.childNodes);
+			if (elementWrap.innerHTML !="") {
+				var temp = elementWrap.lastElementChild.innerText;
+				//console.log(elementWrap.lastElementChild);
+				elementWrap.lastElementChild.outerHTML = "";
+				alert(temp);
+			}else{alert("已经空了");}
+			
+		}
+		document.getElementsByName("leftOut")[0].onclick = function(){
+			var temp = elementWrap.firstElementChild.innerText;
+			if (elementWrap.innerHTML !="") {
+				elementWrap.firstElementChild.outerHTML = "";
+				alert(temp);
+			}else{alert("已经空了");}
+			
+		}
+	</script>
+</body>
+</html>
