@@ -10,12 +10,12 @@ fieldset{
 }
 .aqi-chart-wrap{
 	/*width: auto;*/
-	height: 500px;
+	height: 550px;
 	margin: 0 80px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-around;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	overflow: hidden;
 }
 
