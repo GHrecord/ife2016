@@ -1,0 +1,27 @@
+
+.elementWrap{
+	/*width: auto;*/
+	height: 510px;
+	margin: 0 80px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	/*margin-top: 50px;*/
+	overflow: hidden;
+}
+
+.element {
+	width: 15px;
+	margin: 0;
+	flex-flow: row nowrap;
+	cursor: pointer;
+	background: #fa1103;
+	position: relative;
+}
+.details {
+	font-size: 15px;
+	color: #767676;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}

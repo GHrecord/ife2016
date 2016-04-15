@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>基础JavaScript练习（二）</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<input type="text" class="textInput" />
+		<input type="button" name="leftIn" value="左侧入" />
+		<input type="button" name="rightIn" value="右侧入" />
+		<input type="button" name="leftOut" value="左侧出" />
+		<input type="button" name="rightOut" value="右侧出" />
+		<input type="button" name="randomData" value="生成随机数据" />
+		<fieldset class="sortType">
+			<legend>点击进行排序</legend>
+			<label>冒泡排序<input name="sort" value="bubbleSort" type="radio"></label>
+    	<label>选择排序<input name="sort" value="selectionSort" type="radio"></label>
+    	<label>插入排序<input name="sort" value="insertionSort" type="radio"></label>
+    	<label>快速排序<input name="sort" value="quickSort" type="radio"></label>
+    	<label>归并排序<input name="sort" value="mergeSort" type="radio"></label>
+    	<label>希尔排序<input name="sort" value="shellSort" type="radio"></label>
+    	<label>堆排序<input name="sort" value="heapSort" type="radio"></label>
+		</fieldset>
+	</div>
+	<div class="elementWrap"></div>
+	<script type="text/javascript" src="task19.js"></script>
+</body>
+</html>
