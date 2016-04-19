@@ -11,7 +11,8 @@ fieldset{
 .aqi-chart-wrap{
 	/*width: auto;*/
 	height: 550px;
-	margin: 0 80px;
+	margin: 0 0px;
+	padding: 0 80px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-around;
@@ -48,7 +49,7 @@ fieldset{
 .details {
 	font-size: 15px;
 	color: #767676;
-	width: 140px;
+	width: 145px;
 	height: 36px;
 	position: absolute;
 	top: -50px;
@@ -60,6 +61,7 @@ fieldset{
 	background: #fff;
 	visibility: hidden;
 }
+
 .bar {
 	animation: moveIn 1s;
 }
