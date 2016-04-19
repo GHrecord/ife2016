@@ -1,7 +1,7 @@
 
 .elementWrap{
 	/*width: auto;*/
-	height: 510px;
+	height: 520px;
 	margin: 0 80px;
 	display: flex;
 	align-items: flex-end;
@@ -15,7 +15,7 @@
 	margin: 0;
 	flex-flow: row nowrap;
 	cursor: pointer;
-	background: #fa1103;
+	/*background: #fa1103;*/
 	position: relative;
 }
 .details {
