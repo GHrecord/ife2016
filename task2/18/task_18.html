@@ -33,22 +33,28 @@
 	<script type="text/javascript">
 		var textInput = document.getElementsByClassName("textInput")[0];
 		var elementWrap = document.getElementsByClassName("elementWrap")[0];
-		console.log(elementWrap);
-		document.getElementsByName("leftIn")[0].onclick = function(){
+		var btnLeftIn = document.getElementsByName("leftIn")[0];
+		var btnRightIn = document.getElementsByName("rightIn")[0];
+		var btnLeftOut = document.getElementsByName("rightOut")[0];
+		var btnRightOut =document.getElementsByName("leftOut")[0];
+
+		//console.log(elementWrap);
+		btnLeftIn.onclick = function(){
 			if (textInput.value&&textInput.value.match(/^\d+$/)) {
 				elementWrap.insertAdjacentHTML("afterbegin","<span class='element'>"+textInput.value+"</span>");
 				textInput.value="";
 			}else{alert("请输入要插入的数");}
 			
 		}
-		document.getElementsByName("rightIn")[0].onclick = function(){
+		
+		btnRightIn.onclick = function(){
 			if (textInput.value&&textInput.value.match(/^\d+$/)) {
 				elementWrap.insertAdjacentHTML("beforeend","<span class='element'>"+textInput.value+"</span>");
 				textInput.value="";
 			}else{alert("请输入要插入的数");}
-			
 		}
-		document.getElementsByName("rightOut")[0].onclick = function(){
+
+		btnLeftOut.onclick = function(){
 			//console.log(elementWrap.childNodes);
 			if (elementWrap.innerHTML !="") {
 				var temp = elementWrap.lastElementChild.innerText;
@@ -58,13 +64,19 @@
 			}else{alert("已经空了");}
 			
 		}
-		document.getElementsByName("leftOut")[0].onclick = function(){
+		btnRightOut.onclick = function(){
 			var temp = elementWrap.firstElementChild.innerText;
 			if (elementWrap.innerHTML !="") {
 				elementWrap.firstElementChild.outerHTML = "";
 				alert(temp);
 			}else{alert("已经空了");}
 			
+		}
+		elementWrap.onclick = function(e){
+			//console.log(e.target.nodeName);
+			if (e.target.nodeName == 'SPAN') {
+				e.target.outerHTML ="";
+			}
 		}
 	</script>
 </body>
