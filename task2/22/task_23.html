@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript和树（一）</title>
+	<style type="text/css">
+		div{
+			display: flex;
+			border: 2px solid #333;
+			padding: 25px;
+			margin: 10px;
+			justify-content: space-around;
+			background: #fff;
+		}
+		button {
+			color: #333;
+			font-size: 20px;
+			width: 200px;
+			height: 50px;
+			background: #e36a52;
+		}
+		/*.show {
+			background: #843ddd;
+			/*z-index: -200;*/
+		}*/
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<div class="button">
+		<button class="btnPre">前序遍历</button>
+		<button class="btnIn">中序遍历</button>
+		<button class="btnPost">后序遍历</button>
+		<button class="btnLevel">层次遍历</button>
+	</div>
+
+<script type="text/javascript">
+
+	var BST = {
+		allNodes : [],
+		preOrder : function(node){
+			if (node) {
+				//this.show(node);
+				this.allNodes.push(node);
+				this.preOrder(node.firstElementChild);
+				this.preOrder(node.lastElementChild);
+			}
+		},
+		inOrder : function(node){
+			if (node) {
+				this.inOrder(node.firstElementChild);
+				//this.show(node);
+				this.allNodes.push(node);
+				this.inOrder(node.lastElementChild);
+			}
+		},
+		postOrder : function(node){
+			if (node) {
+				this.postOrder(node.firstElementChild);
+				this.postOrder(node.lastElementChild);
+				//this.show(node);
+				this.allNodes.push(node);
+			}
+		},
+		levelOrder : function(node){
+			var quene = new Array(),
+			    temp;
+			if (node) {
+				quene.push(node);
+			
+				while(quene.length>0){
+					temp = quene.shift();
+					//console.log(quene);
+					this.allNodes.push(temp);
+					if (temp.firstElementChild) {
+						quene.push(temp.firstElementChild);
+					}
+					if (temp.lastElementChild) {
+						quene.push(temp.lastElementChild);
+					}
+				}
+			}
+		},
+		show : function(){
+			var list = this.allNodes;
+			
+			var i = 0;
+			list[i++].style.background = "#843ddd";
+			clearInterval(interval);
+			var interval = setInterval(function(){
+				if(i<list.length){
+					list[i-1].style.background = "#fff";
+					list[i++].style.background = "#843ddd";
+				}else{
+					clearInterval(interval);
+					list[i-1].style.background = "#fff";
+				}
+			},300);
+		}
+	}
+
+	var Troot = document.getElementsByTagName("div")[0];
+	var btns = document.getElementsByClassName("button")[0];
+	console.log(btns);
+	btns.addEventListener("click",function(e){
+		console.log();
+		if (e.target.nodeName == "BUTTON") {
+			if (e.target.className == "btnPre") {
+				console.log(e.target.className);
+				BST.preOrder(Troot);
+				BST.show();
+			}else if (e.target.className == "btnIn") {
+				BST.inOrder(Troot);
+				BST.show();
+			}else if (e.target.className == "btnPost") {
+				BST.postOrder(Troot);
+				BST.show();
+			}else if (e.target.className == "btnLevel") {
+				BST.levelOrder(Troot);
+				BST.show();
+			}
+		}
+	},false);
+	// console.log(Troot);
+	// //console.log(BST.preOrder);
+	// BST.levelOrder(Troot);
+	// BST.show();
+	console.log(BST.allNodes);
+</script>
+</body>
+</html>
