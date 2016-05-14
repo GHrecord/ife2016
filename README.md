@@ -23,6 +23,8 @@ Javascript实现交互显示图表
 #### 40.[demo](http://ghrecord.github.io/ife2016/task3/40/demo.html)
 UI组件之日历组件
 
+#### 44.[demo](http://ghrecord.github.io/ife2016/task3/44/demo.html)
+瀑布布局
 
 
 
