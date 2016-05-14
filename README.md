@@ -20,10 +20,10 @@ Javascript实现交互显示图表
 #### 19.[demo](http://ghrecord.github.io/ife2016/task2/19/task_19.html)
 排序算法可视化显示（部分排序算法未添加）
 
-#### 40.[demo](http://ghrecord.github.io/ife2016/task3/40/demo.html)
+#### 40.[demo](http://ghrecord.github.io/ife2016/task3/task40/demo.html)
 UI组件之日历组件
 
-#### 44.[demo](http://ghrecord.github.io/ife2016/task3/44/demo.html)
+#### 44.[demo](http://ghrecord.github.io/ife2016/task3/task44/demo.html)
 瀑布布局
 
 
